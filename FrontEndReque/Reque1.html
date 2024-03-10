@@ -17,8 +17,12 @@
     <nav>
         <ul>
             <li><a href="#" id = "openModalLink">Inicio</a></li>
-            <li><a href="#" id = "openModalLinkAcercaDe">Acerca de</a></li>
-            <li><a href="#" id = "Agenda tu cita">Agenda tu cita</a></li>
+            <li><a href="#" id = "openModalLinkEmergencias">Atención de emergencias</a></li>
+            <li><a href="#" id = "Agenda tu cita">Citas de control</a></li>
+            <li><a href="#" id = "Nutricion">Nutricion</a></li>
+            <li><a href="#" id = "Servicios Esteticos">Servicios Esteticos</a></li>
+            <li><a href="#" id = "Hotel">Hotel</a></li>
+            <li><a href="#" id = "Procedimientos Veterinarios">Procedimientos Veterinarios</a></li>
             <li><a href="#" id = "Contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -70,13 +74,27 @@
         </div>
     </div>
 
-    <div id = myModalAcercaDe class = "modalAcercaDe">
-        <div class = "modalAcercaDe-content">
-            <p>Hola</p>
-            <span class = "closeAcercaDe">&times;</span>
+    
+    <div id = myModalEmergencias class = "modalEmergencias">
+        <div class = "modalEmergencias-content">
+            <span class = "closeEmergencias">&times;</span>
+            <p>Por favor ingrese su nombre para poder atender su emergencia</p>
+            <input type="text" id = "nombreUsuario" placeholder = "Ingresar su nombre">
+            <button id = "confirmarNombre">Confirmar</button>
+            
         </div>
     </div>
 
+    <!-- Segundo modal -->
+    <div id = "segundoModal" class = "modalEmergencias">
+        <div class = "modalEmergencias-content">
+            <span class = "closeEmergencias2">&times;</span>
+            <p>Por favor indiquenos su emergencia y en breves nos contactaremos con usted</p>
+            <input type="text" id = "textEmergencia">
+            
+            <button id = "confirmarEmergencia">Confirmar</button>
+        </div>
+    </div>
 
     
     

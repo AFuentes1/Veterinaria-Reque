@@ -25,25 +25,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     //Obtener elementos necesarios del DOM
-    var modalAcercaDe = document.getElementById('myModalAcercaDe');
-    var btnAcercaDe = document.getElementById("openModalLinkAcercaDe");
-    var spanAcercaDe = document.getElementsByClassName("closeAcercaDe")[0];
-
+    var modalEmergencias = document.getElementById('myModalEmergencias');
+    var btnEmergencias  = document.getElementById("openModalLinkEmergencias");
+    var spanEmergencias  = document.getElementsByClassName("closeEmergencias")[0];
+    var nombreUsuarioInput = document.getElementById("nombreUsuario");
+    var segundoModal = document.getElementById("segundoModal")
     //Funciones para abrir y cerrar el modal
-    btnAcercaDe.onclick = function() {
-        modalAcercaDe.style.display = "block";
+    btnEmergencias.onclick = function() {
+        modalEmergencias.style.display = "block";
+        nombreUsuarioInput.style.display = "block";
     }
 
     //cuando el usuario haga click en la X, cerrar el modal
-    spanAcercaDe.onclick = function() {
-        modalAcercaDe.style.display = "none";
+    spanEmergencias.onclick = function() {
+        modalEmergencias.style.display = "none";
     }
 
     //cuando el usuario haga click fuera del modal, cerrar el modal
     window.addEventListener('click', function(event) {
-        if (event.target == modalAcercaDe) {
-            modalAcercaDe.style.display = "none";
+        if (event.target == modalEmergencias ) {
+            modalEmergencias.style.display = "none";
         }
+    });
+
+    document.getElementById("confirmarNombre").addEventListener('click', function() {
+        modalEmergencias.style.display = "none";
+        segundoModal.style.display = "block";
     });
 }
 

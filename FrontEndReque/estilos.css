@@ -90,7 +90,7 @@ footer {
     cursor: pointer;
 }
 
-.modalAcercaDe {
+.modalEmergencias{
     display: none;
     position: fixed;
     z-index: 1;
@@ -103,7 +103,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modalAcercaDe-content {
+.modalEmergencias-content {
     position: relative;
     background-color: #fefefe;
     margin: 15% auto;
@@ -112,7 +112,7 @@ footer {
     width: 80%;
 }
 
-.closeAcercaDe {
+.closeEmergencias {
     color: #aaa;
     position: absolute;
     top: 10px;
@@ -121,9 +121,42 @@ footer {
     font-weight: bold;
 }
 
-.closeAcercaDe:hover,
-.closeAcercaDe:focus {
+.closeEmergencias:hover,
+.closeEmergencias:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
+
+.modalEmergencias-content h2{
+    text-align: center;
+}
+
+/* Input
+*/
+#nombreUsuario{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.modalEmergencias-content{
+    text-align: center;
+}
+
+#nombreUsuario{
+    display: inline-block;
+}
+
+
+/* Ingresar texto de la emergencia */
+#textEmergencia{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    height: 80px;
+    font-size: 16px;
+    white-space: normal;
+}
+
