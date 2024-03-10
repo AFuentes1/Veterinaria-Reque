@@ -1,7 +1,10 @@
 *{
     padding: 0;
     margin: 0;
-    
+    font-family: century gothic;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
 }
 body {
     font-family: Arial, sans-serif;
@@ -11,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #229abe;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -19,30 +22,108 @@ header {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    list-style-type: none;
+    background-color: #c5ccce;
 }
 
+
 nav ul li {
+    padding: 20px;
+    width: 150px;
     display: inline;
     margin-right: 10px;
 }
 
-nav ul li a {
+nav ul li a:hover {
+    background-color: white;
     text-decoration: none;
     color: #333;
 }
 
-main {
-    padding: 20px;
-}
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalAcercaDe {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalAcercaDe-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.closeAcercaDe {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeAcercaDe:hover,
+.closeAcercaDe:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

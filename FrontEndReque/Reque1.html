@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria Cartago</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="FrontEnd.js"></script>
+
 </head>
+
 <body>
     <header>
         <h1>Bienvenidos a la veterinaria Cartago</h1>
@@ -13,10 +16,10 @@
 
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Agenda tu cita</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#" id = "openModalLink">Inicio</a></li>
+            <li><a href="#" id = "openModalLinkAcercaDe">Acerca de</a></li>
+            <li><a href="#" id = "Agenda tu cita">Agenda tu cita</a></li>
+            <li><a href="#" id = "Contacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -43,10 +46,40 @@
         <p>&copy; 2024 Veterinaria Cartago</p>
     </footer>
 
-    <script src="script.js"></script>
+    
+    <div id = myModal class = "modal">
+        <div class = "modal-content">
+            <span class = "close">&times;</span>
+            <p>Mision:</p>
+            <p> Proporcionar atención medica verinaria especializada y de calidad, con el fin de mejorar la salud y 
+                bienestar de las mascotas, brindando un servicio profesional y humano, 
+                con el fin de satisfacer las necesidades de nuestros clientes y sus mascotas. Nos comprometemos a ofrecer
+                un servicio de salud preventiva asi como diagnostico y tratamiento avanzado por el bien general de las
+                mascotas. Nuestra misión es ser un recurso confiable y dedicado para todas las necesidades de salud
+                y bienestar de los animales domesticos y silvestres.
+            </p> 
+            <p>Vision: </p> 
+            <p>Nos esforzamos por ser líderes en la atención medica veterinaria, reconocidos por nuestra excelencia clinica,
+                ética profesional y dedicación al servicio al cliente. Buscamos construir relaciones de confianza a largo plazo 
+                con nuestros clientes y sus mascotas, convirtiendonos en el primer punto de contacto para todas sus necesidades
+                veterinarias. Aspiramos a ser un centro de referencia en la comunidad, promoviendo el amor, el cuidado y el 
+                respeto por todos los animales.  
+            </p>
+            
+            </p>
+        </div>
+    </div>
+
+    <div id = myModalAcercaDe class = "modalAcercaDe">
+        <div class = "modalAcercaDe-content">
+            <p>Hola</p>
+            <span class = "closeAcercaDe">&times;</span>
+        </div>
+    </div>
+
 
     
-
+    
 
 </body>
 </html>
