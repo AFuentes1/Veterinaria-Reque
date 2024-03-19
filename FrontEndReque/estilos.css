@@ -6,6 +6,7 @@
     text-decoration: none;
     text-align: center;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -159,4 +160,170 @@ footer {
     font-size: 16px;
     white-space: normal;
 }
+
+
+.modalCitas{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalCitas-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.closeCitas {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeCitas:hover,
+.closeCitas:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para los modales */
+.modalFechas,
+.modalHorarios {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalFechas-content,
+.modalHorarios-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.closeFechas,
+.closeHorarios {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeFechas:hover,
+.closeHorarios:hover,
+.closeFechas:focus,
+.closeHorarios:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el calendario */
+#calendar {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  cursor: default;
+  background-color: #f2f2f2;
+}
+
+td {
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #e6e6e6;
+}
+
+.selected {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.hora {
+  cursor: default;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  padding: 5px; /* Añade un espacio alrededor de cada horario */
+  margin-bottom: 10px; /* Añade espacio entre cada horario */
+  border: 1px solid #ccc; /* Añade un borde alrededor de cada horario */
+  border-radius: 5px; /* Agrega esquinas redondeadas al borde */
+}
+.fecha {
+  cursor: default;
+}
+
+/* Estilos para el modal de confirmación de horario */
+.modalHorarioConfirmacion {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalHorarioConfirmacion-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closeHorarioConfirmacion {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeHorarioConfirmacion:hover,
+.closeHorarioConfirmacion:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
 
