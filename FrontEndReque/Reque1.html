@@ -19,7 +19,7 @@
             
             <li><a href="#" id = "openModalLink">Inicio</a></li>
             <li><a href="#" id = "openModalLinkEmergencias">Atención de emergencias</a></li>
-            <li><a href="#" id="openModalLinkFechas" onclick="showModalFechas()">Citas de contro</a></li>
+            <li><a href="#" id="openModalLinkFechas" onclick="showModalFechas()">Citas de control</a></li>
             <li><a href="#" id = "openModalLinkNutricion">Nutricion</a></li>
             <li><a href="#" id = "Servicios Esteticos">Servicios Esteticos</a></li>
             <li><a href="#" id = "Hotel">Hotel</a></li>
@@ -105,46 +105,34 @@
 
     </div>
     
-    <div id = "myModalFechas" class="modalCitas">
-        <div class = "modalCitas-content">
-        <span class= "closeCitas"></span>
-        <p>Escoja el dia para agendar su cita</p>
-    </div>
-    
-    <div id = "myModelFechas" class = "modalFechas">
-        <div class = "modalFechas-content">
-            <span class = "closeFechas"></span>
-            <p>Escoja el día para agendar su cita</p>
-        </div>
-    </div>
-
     <!-- Modal de Fechas -->
-    <div id = "myModalFechas" class = "modalFechas">
-        <div class = "modalFechas-content">
-            <span class = "closeFechas" >onclick="hideModalFechas()">&times;</span>
-            <p>Escoja el día para agendar su cita</p>
-            <div id = "calendar"></div>
-            <a href="#" onclick="showModalHorarios()">Seleccionar Fecha</a>
-        </div>
+    <div id="myModalFechas" class="modalFechas">
+    <div class="modalFechas-content">
+        <span class="closeFechas" onclick="hideModalFechas()">&times;</span>
+        <p>Escoja el día para agendar su cita</p>
+        <div id="calendar"></div>
+        <a href="#" onclick="showModalHorarios()">Seleccionar Fecha</a>
     </div>
-
-    <div id = "myModalHorarios" class="modalHorarios">
-        <div class = "modalHorarios-content">
-            <span class="closeHorarios" onclick="hideModalHorarios()">&times;</span>
-            <p>Escoja el horario para agendar su cita</p>
-            <div id = "horarioSelector"></div>
-            <a href="#" onclick="confirmarHorario()">Seleccionar Horario</a>
-
-        </div>
+  </div>
+  
+  <!-- Modal de Horarios -->
+  <div id="myModalHorarios" class="modalHorarios">
+    <div class="modalHorarios-content">
+        <span class="closeHorarios" onclick="hideModalHorarios()">&times;</span>
+        <p>Escoja el horario para agendar su cita</p>
+        <div id="horarioSelector"></div>
+        <a href="#" onclick="confirmarHorario()">Seleccionar Horario</a>
     </div>
-
-    <!-- Modal de Confirmación de Horario -->
-    <div id="myModalHorarioConfirmacion" class="modalHorarioConfirmacion">
-        <div class="modalHorarioConfirmacion-content">
-            <span class="closeHorarioConfirmacion" onclick="hideModalHorarioConfirmacion()">&times;</span>
-            <p id="horarioSeleccionadoTexto"></p>
-        </div>
+  </div>
+  
+  <!-- Modal de Confirmación de Horario -->
+  <div id="myModalHorarioConfirmacion" class="modalHorarioConfirmacion">
+    <div class="modalHorarioConfirmacion-content">
+        <span class="closeHorarioConfirmacion" onclick="hideModalHorarioConfirmacion()">&times;</span>
+        <p id="horarioSeleccionadoTexto"></p>
     </div>
+  </div>
+
     <!-- Script para el calendario -->
     <script src="Calendario.js"></script>
     <script src="FrontEnd.js"></script>
