@@ -15,15 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     span.onclick = function() {
         modal.style.display = "none";
     }
-    
+    /*
     //cuando el usuario haga click fuera del modal, cerrar el modal
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
-    }
-    } 
-);
+    } */
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     //Obtener elementos necesarios del DOM
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var spanEmergencias3  = document.getElementsByClassName("closeEmergencias")[2];
     var nombreUsuarioInput = document.getElementById("nombreUsuario");
     var segundoModal = document.getElementById("segundoModal")
-
     var tercerModal = document.getElementById("tercerModal");
 
     
@@ -51,13 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
         modalEmergencias.style.display = "none";
 
     } 
-
+    /*
     //cuando el usuario haga click fuera del modal, cerrar el modal
     window.addEventListener('click', function(event) {
         if (event.target == modalEmergencias ) {
             modalEmergencias.style.display = "none";
         }
-    });
+    });*/
 
     //cuando el usuario haga click en el boton de confirmar nombre, cerrar el modal y abrir el segundo modal
     document.getElementById("confirmarNombre").addEventListener('click', function() {
@@ -71,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         segundoModal.style.display = "none";
     } 
 
+    /*
     //Cerrar el segundo modal con click afuera
     window.addEventListener('click', function(event) {
         if (event.target == segundoModal) {
@@ -78,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
     }); 
+    */
 
     document.getElementById("enviarEmergencia").addEventListener('click', function() {
         segundoModal.style.display = "none";
@@ -88,13 +88,13 @@ document.addEventListener('DOMContentLoaded', function() {
     spanEmergencias3.onclick = function() {
         tercerModal.style.display = "none";
     } 
-    
+    /*  
     window.addEventListener('click', function(event) {
         if (event.target == tercerModal) {
             tercerModal.style.display = "none";
 
         }
-    });   
+    });   */
 });
 
 
@@ -195,6 +195,19 @@ function hideModalHorarioConfirmacion() {
 renderHorarios();
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var modalEsteticos = document.getElementById('myModalEsteticos');
+    var btnEsteticos = document.getElementById("openModalLinkEsteticos");
+    var spanEsteticos = document.getElementsByClassName("closeEsteticos")[0];
+
+    btnEsteticos.onclick = function() {
+        modalEsteticos.style.display = "block";
+    }
+
+    spanEsteticos.onclick = function() {
+        modalEsteticos.style.display = "none";
+    }
+});
 
 
 
