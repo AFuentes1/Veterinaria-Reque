@@ -375,11 +375,19 @@ td:hover {
 }
 
 .modalHotel-content {
-    background-color: #fefefe;
+    background-color: #C1FFFF;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+.modalHotel-content p {
+    color: #229abe;
+}
+
+.modalHotel h2 {
+    color: #229abe;
 }
 
 .closeHotel {
@@ -395,6 +403,45 @@ td:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+.btnHabitacion {
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #229abe;
+    border: 2px solid transparent;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-size: 17px;
+}
+
+.btnHabitacion:hover + .infoHabitacion,
+.infoHabitacion:hover {
+    display: block;
+}
+
+.infoHabitacion {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2.7px solid #229abe;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.imagenHabitacion {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 450px;
+    float: right; /* Coloca la imagen a la derecha */
+    margin-left: 20px; /* Añade un espacio entre la imagen y el texto */
+}
+
+.textoHabitacion {
+    flex: 1;
+
+
 
 /* Estilos para el modal de procedimientos veterinarios */
 
@@ -419,15 +466,15 @@ td:hover {
 }
 
 .modalProcedimientosVeterinarios-content p {
-    color: #004080;
+    color: #229abe;
 }
 
 .modalProcedimientosVeterinarios h2 {
-    color: #004080
+    color: #229abe;
 }
 
 .closeProcedimientosVeterinarios {
-    color: #004080;
+    color: #229abe;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -505,6 +552,8 @@ td:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+
 
 
 

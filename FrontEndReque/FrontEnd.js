@@ -223,6 +223,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function mostrarHabitacion(nombreHabitacion) {
+    var habitaciones = document.getElementsByClassName('descripcionHabitacion');
+    for (var i = 0; i < habitaciones.length; i++) {
+        habitaciones[i].style.display = 'none';
+    }
+    document.getElementById(nombreHabitacion).style.display = 'block';
+}
+
+function ocultarHabitacion(nombreHabitacion) {
+    document.getElementById(nombreHabitacion).style.display = 'none';
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var modalProcedimientosVeterinarios = document.getElementById('myModalProcedimientosVeterinarios');
     var btnProcedimientosVeterinarios = document.getElementById("openModalLinkProcedimientosVeterinarios");
