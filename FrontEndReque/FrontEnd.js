@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     //Funciones para abrir y cerrar el modal
     btn.onclick = function() {
         modal.style.display = "block";
-        
+
     }
 
-    
+
     //cuando el usuario haga click en la X, cerrar el modal
     span.onclick = function() {
         modal.style.display = "none";
@@ -35,20 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var segundoModal = document.getElementById("segundoModal")
     var tercerModal = document.getElementById("tercerModal");
 
-    
-    //Funciones para abrir 
+
+    //Funciones para abrir
     btnEmergencias.onclick = function() {
         modalEmergencias.style.display = "block";
         nombreUsuarioInput.style.display = "block";
-        
+
     }
 
-    
+
     //cuando el usuario haga click en la X, cerrar el modal
     spanEmergencias.onclick = function() {
         modalEmergencias.style.display = "none";
 
-    } 
+    }
     /*
     //cuando el usuario haga click fuera del modal, cerrar el modal
     window.addEventListener('click', function(event) {
@@ -61,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("confirmarNombre").addEventListener('click', function() {
         modalEmergencias.style.display = "none";
         segundoModal.style.display = "block";
-        
+
     });
 
     //Cerrar el segundo modal con la X
     spanEmergencias2.onclick = function() {
         segundoModal.style.display = "none";
-    } 
+    }
 
     /*
     //Cerrar el segundo modal con click afuera
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             segundoModal.style.display = "none";
 
         }
-    }); 
+    });
     */
 
     document.getElementById("enviarEmergencia").addEventListener('click', function() {
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //Cerrar el segundo modal con la X
     spanEmergencias3.onclick = function() {
         tercerModal.style.display = "none";
-    } 
-    /*  
+    }
+    /*
     window.addEventListener('click', function(event) {
         if (event.target == tercerModal) {
             tercerModal.style.display = "none";
@@ -206,6 +206,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
     spanEsteticos.onclick = function() {
         modalEsteticos.style.display = "none";
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var modalHotel = document.getElementById('myModalHotel');
+    var btnHotel = document.getElementById("openModalLinkHotel");
+    var spanHotel = document.getElementsByClassName("closeHotel")[0];
+
+    btnHotel.onclick = function() {
+        modalHotel.style.display = "block";
+    }
+
+    spanHotel.onclick = function() {
+        modalHotel.style.display = "none";
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var modalProcedimientosVeterinarios = document.getElementById('myModalProcedimientosVeterinarios');
+    var btnProcedimientosVeterinarios = document.getElementById("openModalLinkProcedimientosVeterinarios");
+    var spanProcedimientosVeterinarios = document.getElementsByClassName("closeProcedimientosVeterinarios")[0];
+
+    btnProcedimientosVeterinarios.onclick = function() {
+        modalProcedimientosVeterinarios.style.display = "block";
+    }
+
+    spanProcedimientosVeterinarios.onclick = function() {
+        modalProcedimientosVeterinarios.style.display = "none";
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var modalContacto = document.getElementById('myModalContacto');
+    var btnContacto = document.getElementById("openModalLinkContacto");
+    var spanContacto = document.getElementsByClassName("closeContacto")[0];
+
+    btnContacto.onclick = function() {
+        modalContacto.style.display = "block";
+    }
+
+    spanContacto.onclick = function() {
+        modalContacto.style.display = "none";
     }
 });
 

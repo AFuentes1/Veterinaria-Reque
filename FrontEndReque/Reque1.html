@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria Cartago</title>
     <link rel="stylesheet" href="estilos.css">
-    
+
 
 </head>
 
@@ -15,15 +15,15 @@
     </header>
 
     <nav>
-        <ul>  
+        <ul>
             <li><a href="#" id = "openModalLink">Inicio</a></li>
             <li><a href="#" id = "openModalLinkEmergencias">Atención de emergencias</a></li>
             <li><a href="#" id = "openModalLinkFechas" onclick="showModalFechas()">Citas de control</a></li>
             <li><a href="#" id = "openModalLinkNutricion">Nutricion</a></li>
             <li><a href="#" id = "openModalLinkEsteticos">Servicios Esteticos</a></li>
-            <li><a href="#" id = "Hotel">Hotel</a></li>
-            <li><a href="#" id = "Procedimientos Veterinarios">Procedimientos Veterinarios</a></li>
-            <li><a href="#" id = "Contacto">Contacto</a></li>
+            <li><a href="#" id=  "openModalLinkHotel">Hotel</a></li>
+            <li><a href="#" id = "openModalLinkProcedimientosVeterinarios">Procedimientos Veterinarios</a></li>
+            <li><a href="#" id = "openModalLinkContacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -38,10 +38,10 @@
         <div class= "segundario">
             <p>Notas segundarias variadas</p>
         </div>
-        
+
     </div>
 
-    <div class = "pie de pagina"> 
+    <div class = "pie de pagina">
         <p>Mas informacion sobre la pagina</p>
 
     </div>
@@ -50,38 +50,38 @@
         <p>&copy; 2024 Veterinaria Cartago</p>
     </footer>
 
-    
+
     <div id = myModal class = "modal">
         <div class = "modal-content">
             <span class = "close">&times;</span>
             <p>Mision:</p>
-            <p> Proporcionar atención medica verinaria especializada y de calidad, con el fin de mejorar la salud y 
-                bienestar de las mascotas, brindando un servicio profesional y humano, 
+            <p> Proporcionar atención medica verinaria especializada y de calidad, con el fin de mejorar la salud y
+                bienestar de las mascotas, brindando un servicio profesional y humano,
                 con el fin de satisfacer las necesidades de nuestros clientes y sus mascotas. Nos comprometemos a ofrecer
                 un servicio de salud preventiva asi como diagnostico y tratamiento avanzado por el bien general de las
                 mascotas. Nuestra misión es ser un recurso confiable y dedicado para todas las necesidades de salud
                 y bienestar de los animales domesticos y silvestres.
-            </p> 
-            <p>Vision: </p> 
-            <p>Nos esforzamos por ser líderes en la atención medica veterinaria, reconocidos por nuestra excelencia clinica,
-                ética profesional y dedicación al servicio al cliente. Buscamos construir relaciones de confianza a largo plazo 
-                con nuestros clientes y sus mascotas, convirtiendonos en el primer punto de contacto para todas sus necesidades
-                veterinarias. Aspiramos a ser un centro de referencia en la comunidad, promoviendo el amor, el cuidado y el 
-                respeto por todos los animales.  
             </p>
-            
+            <p>Vision: </p>
+            <p>Nos esforzamos por ser líderes en la atención medica veterinaria, reconocidos por nuestra excelencia clinica,
+                ética profesional y dedicación al servicio al cliente. Buscamos construir relaciones de confianza a largo plazo
+                con nuestros clientes y sus mascotas, convirtiendonos en el primer punto de contacto para todas sus necesidades
+                veterinarias. Aspiramos a ser un centro de referencia en la comunidad, promoviendo el amor, el cuidado y el
+                respeto por todos los animales.
+            </p>
+
             </p>
         </div>
     </div>
 
-    
+
     <div id = myModalEmergencias class = "modalEmergencias">
         <div class = "modalEmergencias-content">
             <span class = "closeEmergencias">&times;</span>
             <p>Por favor ingrese su nombre para poder atender su emergencia</p>
             <input type="text" id = "nombreUsuario" placeholder = "Ingresar su nombre">
             <button id = "confirmarNombre">Confirmar</button>
-            
+
         </div>
     </div>
 
@@ -103,7 +103,7 @@
         </div>
 
     </div>
-    
+
     <!-- Modal de Fechas -->
     <div id="myModalFechas" class="modalFechas">
     <div class="modalFechas-content">
@@ -113,7 +113,7 @@
         <a href="#" onclick="showModalHorarios()">Seleccionar Fecha</a>
     </div>
   </div>
-  
+
   <!-- Modal de Horarios -->
   <div id="myModalHorarios" class="modalHorarios">
     <div class="modalHorarios-content">
@@ -123,7 +123,7 @@
         <a href="#" onclick="confirmarHorario()">Seleccionar Horario</a>
     </div>
   </div>
-  
+
   <!-- Modal de Confirmación de Horario -->
   <div id="myModalHorarioConfirmacion" class="modalHorarioConfirmacion">
     <div class="modalHorarioConfirmacion-content">
@@ -142,6 +142,103 @@
     <!-- Script para el calendario -->
     <script src="Calendario.js"></script>
     <script src="FrontEnd.js"></script>
+
+    <!-- Modal de Hotel -->
+    <div id="myModalHotel" class="modalHotel">
+        <div class="modalHotel-content">
+            <span class="closeHotel">&times;</span>
+            <h2>Hotel para mascotas</h2>
+            <p>Contenido del hotel para mascotas...</p>
+        </div>
+    </div>
+
+    <!-- Modal de Procedimientos Veterinarios -->
+    <div id="myModalProcedimientosVeterinarios" class="modalProcedimientosVeterinarios">
+        <div class="modalProcedimientosVeterinarios-content">
+            <span class="closeProcedimientosVeterinarios">&times;</span>
+            <h2>Procedimientos Veterinarios</h2>
+            <br></br>
+            <div class="procedimientos-items">
+                <div class="procedimiento-item">
+                    <img src="https://img.lalr.co/cms/2020/02/10205753/vet620.jpg" alt="Imagen 1">
+                    <p>Medicina Interna</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.consumer.es/app/uploads/2019/07/img_mascotas-medicinas-sobremedicar.jpg" alt="Imagen 2">
+                    <p>Farmacia</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://centroveterinariopacaembu.com.br/wp-content/uploads/2019/05/exames-laboratoriais.jpg" alt="Imagen 3">
+                    <p>Laboratorio</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.zooplus.es/magazine/wp-content/uploads/2021/05/Radiografia-de-un-gato-1.jpeg" alt="Imagen 4">
+                    <p>Rayos X</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://imgcom.masterd.es/12/blog/2018/07/38787.jpg" alt="Imagen 5">
+                    <p>Ultrasonido</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://hospitalveterinarioceylan.com/wp-content/uploads/2019/03/Cirug%C3%ADa-Programada2.jpg" alt="Imagen 6">
+                    <p>Cirugía</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.shutterstock.com/image-photo/little-beautiful-bunny-holds-toothbrush-260nw-1776563891.jpg" alt="Imagen 7">
+                    <p>Limpieza Dental</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.veterinariolugo.com/images/clinicas-veterinarias-lugo.jpg" alt="Imagen 8">
+                    <p>Internamiento</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://consultafelina.es/assets/consultafelinadotes-cat-pic-header-800-28a3651c1.jpg" alt="Imagen 10">
+                    <p>Atención a Domicilio</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://atriumveterinaria.com/wp-content/uploads/2021/10/cardiologia-veterinaria-perro.jpg" alt="Imagen 9">
+                    <p>Cardiología</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://urgenciasveterinarias.com.co/wp-content/uploads/2021/12/Gato_fracturado.jpg" alt="Imagen 11">
+                    <p>Ortopedia</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.clinvetorino.eu/wp-content/uploads/2022/03/endoscopia-veterinaria-torino-cane-gatto-diagnostica-per-immagini.jpg" alt="Imagen 12">
+                    <p>Endoscopía</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://vetquality.com.br/wp-content/uploads/sites/2/2023/12/banco-sangue-veterinario-sp.jpg" alt="Imagen 13">
+                    <p>Oncología</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.animalhome.com.mx/wp-content/uploads/2021/03/Oftalmologia-Veterinaria-Mexico-CDMX3.jpg" alt="Imagen 14">
+                    <p>Oftalmología</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://www.vetclan.com/wp-content/uploads/Microchip.png" alt="Imagen 17">
+                    <p>Micro Chip</p>
+                </div>
+                <div class="procedimiento-item">
+                    <img src="https://static.vecteezy.com/ti/fotos-kostenlos/t1/29044954-katze-flugzeug-fenster-generieren-ai-foto.jpg" alt="Imagen 18">
+                    <p>Trámite de Exportación</p>
+                </div>
+
+
+
+                <!-- Agrega más elementos para cada procedimiento -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contacto -->
+    <div id="myModalContacto" class="modalContacto">
+        <div class="modalContacto-content">
+            <span class="closeContacto">&times;</span>
+            <h2>Contacto</h2>
+            <p>Contenido de contacto...</p>
+        </div>
+    </div>
 </body>
 
 </html>
