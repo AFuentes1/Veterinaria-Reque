@@ -440,7 +440,7 @@ td:hover {
 
 .textoHabitacion {
     flex: 1;
-
+}
 
 
 /* Estilos para el modal de procedimientos veterinarios */
@@ -552,7 +552,195 @@ td:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
+/* Estilo general del modal */
+.modalNutricion {
+    display: none; /* Por defecto, el modal está oculto */
+    position: fixed; /* Posición fija en la ventana del navegador */
+    z-index: 1; /* Z-index alto para que esté por encima del resto del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+   /*evitar que se mueva el contenido */
+   position: fixed
+  
+  }
+  
+  /* Estilo del contenido del modal */
+  .modalNutricion-content {
+    background-color: #fefefe; /* Fondo blanco */
+    margin: 15% auto; /* Margen superior e inferior, centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888; /* Borde gris */
+    width: 80%; /* Ancho del contenido */
+  }
+  
+  /* Estilo del botón de cierre del modal */
+  .closeNutricion {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeNutricion:hover,
+  .closeNutricion:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  /* Estilo para ocultar las opciones de animales por defecto */
+  #animalOptions {
+    display: none;
+  }
+  
+  /* Estilo para los botones de animales */
+  .animalButton {
+    display: block; /* Mostrar los botones uno debajo del otro */
+    width: 100%; /* Ancho completo */
+    padding: 10px 0; /* Añadir espacio alrededor del texto del botón */
+    background-color: #33a2e7; /* Color de fondo */
+    color: white; /* Color de texto */
+    font-size: 15px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    margin-bottom: 5px; /* Espacio entre los botones */
+    transition: background-color 0.3s; /* Efecto de transición suave */
+  }
+  
+  .animalButton:hover {
+    background-color: #45a049; /* Color de fondo oscuro al pasar el ratón por encima */
+  }
+  
+  .modalAnimales {
+    display: none; /* Por defecto, el modal está oculto */
+    position: fixed; /* Posición fija en la ventana del navegador */
+    z-index: 1; /* Z-index alto para que esté por encima del resto del contenido */
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+  }
+  
+  /* Estilo del contenido del modal */
+  .modalAnimales-content {
+    background-color: #fefefe; /* Fondo blanco */
+    margin: 15% auto; /* Margen superior e inferior, centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888; /* Borde gris */
+    width: 80%; /* Ancho del contenido */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilo del botón de cierre del modal */
+  .closeAnimales {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeAnimales:hover,
+  .closeAnimales:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  /* Estilo del botón de cierre del modal */
+  .closeInfo1 {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeInfo1:hover,
+  .closeInfo1:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .closeInfo2 {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeInfo2:hover,
+  .closeInfo2:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .closeInfo3 {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeInfo3:hover,
+  .closeInfo3:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .closeInfo4 {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeInfo4:hover,
+  .closeInfo4:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .closeInfo5 {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeInfo5:hover,
+  .closeInfo5:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .closeInfo6 {
+    color: #aaa; /* Color de texto gris */
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .closeInfo6:hover,
+  .closeInfo6:focus {
+    color: black; /* Cambia el color del texto al pasar el ratón por encima o al enfocar */
+    text-decoration: none; /* Quita el subrayado del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+  
+  
 
 
 

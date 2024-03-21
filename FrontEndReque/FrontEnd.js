@@ -171,7 +171,7 @@ function confirmarHorario() {
     if (horarioSeleccionado) {
         var horarioSeleccionadoTexto = horarioSeleccionado.textContent;
         var textoModal = document.getElementById("horarioSeleccionadoTexto");
-        textoModal.textContent = 'Ha seleccionado el horario: ' + horarioSeleccionadoTexto;
+        textoModal.textContent = 'Su cita se ha agendado con exito en el horario de ' + horarioSeleccionadoTexto;
         showModalHorarioConfirmacion();
         hideModalHorarios();
     } else {
@@ -263,6 +263,128 @@ document.addEventListener('DOMContentLoaded', function() {
         modalContacto.style.display = "none";
     }
 });
+
+// Evento de clic en el enlace "Nutrición"
+document.getElementById("openModalLinkNutricion").addEventListener("click", function(event) {
+    event.preventDefault(); // Evitar la acción por defecto del enlace
+    span = document.getElementsByClassName("closeNutricion")[0];
+
+    // Mostrar el modal de nutrición
+    var modal = document.getElementById("modalNutricion");
+    modal.style.display = "block";
+
+    // Mostrar opciones de animales en el modal
+    var animalOptions = document.getElementById("animalOptions");
+    animalOptions.style.display = "block";
+
+    // Cerrar el modal al hacer clic en la "X"
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Evento de clic en los botones de animales
+    var animalButtons = document.querySelectorAll(".animalButton");
+    var animalOptions = document.getElementById("animalOptions");
+    animalButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+    if (button.id === "perro") {
+        // Mostrar opciones de perro
+        var modal = document.getElementById("modalPerro");
+        var span = document.getElementsByClassName("closeAnimales")[0];
+        console.log("Perro seleccionado");
+
+       
+        modal.style.display = "block";
+            
+        
+
+        // Cerrar el modal al hacer clic en la "X"
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+    });
+
+    document.addEventListener("click", function(event) {
+        var modalPerro = document.getElementById("myModalPerro");
+        var btnPerro = document.getElementById("Perros");
+        var spanPerro = document.getElementsByClassName("closeInfo1")[0];
+
+        btnPerro.onclick = function() {
+            modalPerro.style.display = "block";
+        }
+        spanPerro.onclick = function() {
+            modalPerro.style.display = "none";
+        }
+    });
+
+    document.addEventListener("click", function(event) {
+        var modalGatos = document.getElementById("myModalGatos");
+        var btnGatos = document.getElementById("Gatos");
+        var spanGatos = document.getElementsByClassName("closeInfo2")[0];
+
+        btnGatos.onclick = function() {
+            modalGatos.style.display = "block";
+        }
+        spanGatos.onclick = function() {
+            modalGatos.style.display = "none";
+        }
+    });
+
+    document.addEventListener("click", function(event) {
+        var modalConejos = document.getElementById("myModalConejos");
+        var btnConejos = document.getElementById("Conejos");
+        var spanConejos = document.getElementsByClassName("closeInfo3")[0];
+
+        btnConejos.onclick = function() {
+            modalConejos.style.display = "block";
+        }
+        spanConejos.onclick = function() {
+            modalConejos.style.display = "none";
+        }
+    });
+
+    document.addEventListener("click", function(event) {
+        var modalCanarios = document.getElementById("myModalCanarios");
+        var btnCanarios = document.getElementById("Canarios");
+        var spanCanarios = document.getElementsByClassName("closeInfo4")[0];
+
+        btnCanarios.onclick = function() {
+            modalCanarios.style.display = "block";
+        }
+        spanCanarios.onclick = function() {
+            modalCanarios.style.display = "none";
+        }
+    });
+
+    document.addEventListener("click", function(event) {
+        var modalHamsters = document.getElementById("myModalHamsters");
+        var btnHamsters = document.getElementById("Hamsters");
+        var spanHamsters = document.getElementsByClassName("closeInfo5")[0];
+
+        btnHamsters.onclick = function() {
+            modalHamsters.style.display = "block";
+        }
+        spanHamsters.onclick = function() {
+            modalHamsters.style.display = "none";
+        }
+    });
+    document.addEventListener("click", function(event) {
+        var modal = document.getElementById("myModalOtrosAnimales");
+        var btn = document.getElementById("Otros");
+        var span = document.getElementsByClassName("closeInfo6")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    });
+    
+});
+});
+
 
 
 
